@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swiftEngineAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ji2-3S-bwg">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello, adventurer! Please enter a number between 1 and 10." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ayj-vr-tcZ">
+                                <rect key="frame" x="16" y="164" width="343" height="146"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Engine Adventure" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSI-U2-T3S">
+                                <rect key="frame" x="16" y="12" width="343" height="86"/>
+                                <color key="backgroundColor" red="0.86901271339999997" green="0.51358385847192811" blue="0.19434991842614677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
+                                <color key="textColor" red="0.99989503619999998" green="1" blue="0.999871552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sword" translatesAutoresizingMaskIntoConstraints="NO" id="7OX-n2-a4N">
+                                <rect key="frame" x="163" y="106" width="50" height="50"/>
+                                <color key="tintColor" red="0.99989503619999998" green="1" blue="0.999871552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek3-m9-IPE">
+                                <rect key="frame" x="16" y="377" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.86901271339999997" green="0.51358385849999999" blue="0.19434991839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99989503619999998" green="1" blue="0.999871552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3i-Jq-dlh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ayj-vr-tcZ" firstAttribute="width" secondItem="Ji2-3S-bwg" secondAttribute="width" id="0FR-LH-kID"/>
+                            <constraint firstItem="jSI-U2-T3S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Id-RR-bvq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="jSI-U2-T3S" secondAttribute="top" constant="8" id="6iF-le-sTm"/>
+                            <constraint firstItem="ayj-vr-tcZ" firstAttribute="top" secondItem="7OX-n2-a4N" secondAttribute="bottom" constant="8" id="E1o-ib-sTi"/>
+                            <constraint firstItem="Ji2-3S-bwg" firstAttribute="leading" secondItem="jSI-U2-T3S" secondAttribute="leading" id="EtG-ja-SXa"/>
+                            <constraint firstItem="ek3-m9-IPE" firstAttribute="height" secondItem="Ji2-3S-bwg" secondAttribute="height" id="HfV-19-UsS"/>
+                            <constraint firstItem="ek3-m9-IPE" firstAttribute="centerX" secondItem="Ji2-3S-bwg" secondAttribute="centerX" id="KUk-w0-1rG"/>
+                            <constraint firstItem="ayj-vr-tcZ" firstAttribute="width" secondItem="jSI-U2-T3S" secondAttribute="width" id="Qd6-O4-x5D"/>
+                            <constraint firstItem="Ji2-3S-bwg" firstAttribute="top" secondItem="ayj-vr-tcZ" secondAttribute="bottom" constant="8" id="a3v-YV-jW8"/>
+                            <constraint firstItem="ek3-m9-IPE" firstAttribute="top" secondItem="Ji2-3S-bwg" secondAttribute="bottom" constant="29" id="f8h-lE-ZIc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ek3-m9-IPE" secondAttribute="bottom" constant="260" id="fv0-m9-wi3"/>
+                            <constraint firstItem="ek3-m9-IPE" firstAttribute="width" secondItem="Ji2-3S-bwg" secondAttribute="width" id="lFu-aJ-Zzo"/>
+                            <constraint firstItem="7OX-n2-a4N" firstAttribute="top" secondItem="jSI-U2-T3S" secondAttribute="bottom" constant="8" id="lsT-Ec-7z2"/>
+                            <constraint firstItem="7OX-n2-a4N" firstAttribute="centerX" secondItem="jSI-U2-T3S" secondAttribute="centerX" id="n7t-en-JAA"/>
+                            <constraint firstItem="jSI-U2-T3S" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" constant="-32" id="s1e-Oy-RhO"/>
+                            <constraint firstItem="Ji2-3S-bwg" firstAttribute="leading" secondItem="ayj-vr-tcZ" secondAttribute="leading" id="vLC-HN-B7t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="ayj-vr-tcZ" id="eWg-fe-IHP"/>
+                        <outlet property="userInput" destination="Ji2-3S-bwg" id="8pv-sd-30q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sword" width="50" height="50"/>
+    </resources>
+</document>
